@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Watch</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <a href="#"><i class="bx bxs-watch"></i>Watch</a>
+
+      <ul class="nav nav-links">
+        <i class="bx bx-x" id="navclose-btn"></i>
+        <li><a href="#hero" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About us</a></li>
+        <li><a href="#products" class="nav-link">Products</a></li>
+        <li><a href="#reviews" class="nav-link">Reviews</a></li>
+      </ul>
+
+      <div>
+        <i class="bx bx-menu" id="menu-icon"></i>
+        <i class="bx bx-search search-icon"></i>
+        <i class="bx bx-cart-alt cart-open"></i>
+        <i class="bx bx-user user-modal"></i>
+      </div>
+
+      <!-- Searh//////////////////////////////////////////////////////////////////// -->
+      <div class="search">
+        <input
+          class="search-input"
+          type="search"
+          name=""
+          id=""
+          placeholder="Search Here..."
+        />
+      </div>
+
+      <div class="cart">
+        <h2>Cart</h2>
+        <table>
+          <thead>
+            <tr>
+              <td>Product</td>
+              <td>Price</td>
+              <td>Quantity</td>
+              <td>Choose</td>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- <tr>
+              <td>
+                <img src="img/1.avif" />
+                <p>Generation6</p>
+              </td>
+              <td><p class="tbody-price">320</p></td>
+              <td><input type="number" value="1" min="0" /></td>
+              <td>Delete</td>
+            </tr> -->
+          </tbody>
+        </table>
+
+        <div class="price">
+          <p class="price-total-display">
+            Please choose any item below to see cart
+          </p>
+          <button class="checkout-btn">Check out</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero" class="hero-section">
+        <div class="hero-div">
+          <hero class="hero-left">
+            <h2>SHOP NOW</h2>
+            <h1>New Arrival of Fresh Products</h1>
+            <button class="btn hero-btn">SHOP NOW</button>
+          </hero>
+          <hero class="hero-right">
+            <img src="img/hero.png" />
+          </hero>
+        </div>
+      </section>
+
+      <section id="about" class="aboutus-section">
+        <div class="aboutus-div" data-aos="fade-right" data-aos-duration="2500">
+          <div class="aboutus-left">
+            <img
+              src="https://images.unsplash.com/photo-1482954363933-4bed6bbea570?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDF8fGhhbmQlMjB3YXRjaHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+            />
+          </div>
+          <div class="aboutus-right">
+            <h2>About <span class="highlight">US</span></h2>
+            <h3>Bringing the unexpected to classic timekeeping since 2013.</h3>
+            <p>
+              For ten years, our small team of creatives have been proud to
+              bring you what’s fresh in California Modern watchmaking. Every
+              MVMT is dreamed up collaboratively from our Venice Beach
+              headquarters, and is built to run with the precision, purpose and
+              x-factors needed to make the best of the time you keep.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="products" class="product-section">
+        <div class="product-div container">
+          <h2>Our <span class="highlight">PRODUCT</span></h2>
+          <div class="boxes" data-aos="fade-up" data-aos-duration="2500">
+            <div class="box">
+              <img src="img/1.avif" alt="watch" />
+              <div>
+                <p class="product-name">Generation6</p>
+                <div class="stars">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star-half"></i>
+                </div>
+                <p class="product-price">300</p>
+              </div>
+              <button class="bx bx-cart-alt product-btn"></button>
+            </div>
+
+            <div class="box">
+              <img src="img/2.avif" alt="watch" />
+              <div>
+                <p class="product-name">Generation7</p>
+                <div class="stars">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star-half"></i>
+                </div>
+                <p class="product-price">320</p>
+              </div>
+              <button class="bx bx-cart-alt product-btn"></button>
+            </div>
+
+            <div class="box">
+              <img src="img/3.avif" alt="watch" />
+              <div>
+                <p class="product-name">Generation8</p>
+                <div class="stars">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star-half"></i>
+                </div>
+                <p class="product-price">340</p>
+              </div>
+              <button class="bx bx-cart-alt product-btn"></button>
+            </div>
+
+            <div class="box">
+              <img src="img/4.avif" alt="watch" />
+              <div>
+                <p class="product-name">Generation9</p>
+                <div class="stars">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star-half"></i>
+                </div>
+                <p class="product-price">360</p>
+              </div>
+              <button class="bx bx-cart-alt product-btn"></button>
+            </div>
+
+            <div class="box">
+              <img src="img/5.avif" alt="watch" />
+              <div>
+                <p class="product-name">Generation10</p>
+                <div class="stars">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star-half"></i>
+                </div>
+                <p class="product-price">380</p>
+              </div>
+              <button class="bx bx-cart-alt product-btn"></button>
+            </div>
+
+            <div class="box">
+              <img src="img/6.avif" alt="watch" />
+              <div>
+                <p class="product-name">Generation11</p>
+                <div class="stars">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star-half"></i>
+                </div>
+                <p class="product-price">400</p>
+              </div>
+              <button class="bx bx-cart-alt product-btn"></button>
+            </div>
+
+            <div class="box">
+              <img src="img/7.avif" alt="watch" />
+              <div>
+                <p class="product-name">Generation12/p></p>
+                <div class="stars">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star-half"></i>
+                </div>
+                <p class="product-price">420</p>
+              </div>
+              <button class="bx bx-cart-alt product-btn"></button>
+            </div>
+
+            <div class="box">
+              <img src="img/8.avif" alt="watch" />
+              <div>
+                <p class="product-name">Generation14</p>
+                <div class="stars">
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star"></i>
+                  <i class="bx bxs-star-half"></i>
+                </div>
+                <p class="product-price">440</p>
+              </div>
+              <button class="bx bx-cart-alt product-btn"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews-section" id="reviews">
+        <div class="reviews-div container">
+          <h2>Our <span class="highlight">Customer's</span></h2>
+          <div class="reviews-boxes">
+            <div class="box">
+              <img src="img/customer-1.jpg" alt="" />
+              <div class="stars">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star-half"></i>
+              </div>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui
+                labore pariatur enim quae quis earum!
+              </p>
+              <h2>Will Smith</h2>
+            </div>
+            <div class="box">
+              <img src="img/customer-2.jpg" alt="" />
+              <div class="stars">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star-half"></i>
+              </div>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui
+                labore pariatur enim quae quis earum!
+              </p>
+              <h2>Will Smith</h2>
+            </div>
+            <div class="box">
+              <img src="img/customer-3.jpg" alt="" />
+              <div class="stars">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star-half"></i>
+              </div>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui
+                labore pariatur enim quae quis earum!
+              </p>
+              <h2>Will Smith</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section class="section-footer">
+        <div class="div-footer">
+          <div class="grid-footer">
+            <div>
+              <p><a href="">GYMESE</a></p>
+              <p><a href="">Copyright © 2023 by Nathan</a></p>
+              <p><a href="">Inc. All rights reserved.</a></p>
+            </div>
+            <div>
+              <p><a href="">Contact us</a></p>
+              <p><a href="">2115 N Hathaway Texas</a></p>
+              <p><a href="">888-888-8888.</a></p>
+              <p><a href="">khanhngoc0102@gmail.com</a></p>
+            </div>
+            <div>
+              <p><a href="">Resources</a></p>
+              <p><a href="">Help center</a></p>
+              <p><a href="">Privacy & terms</a></p>
+              <p><a href="">Sign in</a></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <div class="modal hidden">
+      <i class="bx bx-x modal-close"></i>
+      <h2>
+        Open your bank account <br />
+        in just 5 minutes
+      </h2>
+      <form class="modal-form">
+        <label>First Name</label>
+        <input type="text" />
+        <label>Last Name</label>
+        <input type="text" />
+        <label>Email Address</label>
+        <input type="email" />
+        <button class="modal-btn">Next step &rarr;</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
